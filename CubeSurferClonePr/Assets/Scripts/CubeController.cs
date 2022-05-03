@@ -9,7 +9,9 @@ public class CubeController : MonoBehaviour
 
     private void Update()
     {
-        float x = Input.GetAxis("Horizontal") * speedX * Time.deltaTime;
-        transform.Translate(x, 0, speedZ * Time.deltaTime);
+        float xAxis = Input.GetAxis("Horizontal") * speedX * Time.deltaTime;
+        this.transform.Translate(xAxis, 0f, speedZ * Time.deltaTime);
     }
+   
+
 }
